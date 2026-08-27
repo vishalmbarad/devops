@@ -1,0 +1,33 @@
+Step1: Create a folder/local repo
+        mkdir folder_name
+
+Step2: Move to the folder/local repo
+        cd folder_name
+
+Step3: Create a git local repo
+        git init
+
+Step4: Config. for the user to use the git repo
+        git config --global user.name "Parth Joshi"
+        git config --global user.email "parth_ljcca@ljku.edu.in"
+        git config --global http.proxy 192.168.10.253:808
+
+Step5: Clone remote repo to the local repo
+        git clone https://github.com/parthjoshi-ljcca/todoapp_project.git
+
+Step6: Check status
+        git status
+
+Step7: Create project folders and files
+
+Step8: Track the untracked files and move it to staging phase
+        git add filename or git add .
+
+Step9 (optional if you want to unstaged a file):
+        git restore --staged filename
+
+Step10: Commit the changes
+        git commit -m "feat: index.html ui has been added"
+
+Step11: Push local code to remote repo into origin/main
+        git push origin main 
