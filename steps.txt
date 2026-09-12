@@ -8,12 +8,12 @@ Step3: Create a git local repo
         git init
 
 Step4: Config. for the user to use the git repo
-        git config --global user.name "Parth Joshi"
-        git config --global user.email "parth_ljcca@ljku.edu.in"
+        git config --global user.name "vishal barad"
+        git config --global user.email "baradmahipatg@gmail.com"
         git config --global http.proxy 192.168.10.253:808
 
 Step5: Clone remote repo to the local repo
-        git clone https://github.com/parthjoshi-ljcca/todoapp_project.git
+        git clone https://github.com/vishalmbarad/devops.git
 
 Step6: Check status
         git status
