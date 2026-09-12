@@ -4,8 +4,8 @@ ls
 
 git init
 
-git config --global user.name "Your Name"
-git config --global user.email "your@email.com"
+git config --global user.name "vishal barad"
+git config --global user.email "baradmahipatg@gmail.com"
 
 git config --list
 
@@ -22,7 +22,7 @@ git status
 git branch -M main
 git branch
 
-git remote add origin YOUR_GITHUB_LINK
+git remote add origin https://github.com/vishalmbarad/devops.git
 
 git push -u origin main
 
