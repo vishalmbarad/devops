@@ -1,33 +1,65 @@
-Step1: Create a folder/local repo
-        mkdir folder_name
+mkdir Set1
+cd Set1
+ls
 
-Step2: Move to the folder/local repo
-        cd folder_name
+git init
 
-Step3: Create a git local repo
-        git init
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
 
-Step4: Config. for the user to use the git repo
-        git config --global user.name "vishal barad"
-        git config --global user.email "baradmahipatg@gmail.com"
-        git config --global http.proxy 192.168.10.253:808
+git config --list
 
-Step5: Clone remote repo to the local repo
-        git clone https://github.com/vishalmbarad/devops.git
+echo "This is read me file" > README.md
 
-Step6: Check status
-        git status
+git status
+git add README.md
+git status
 
-Step7: Create project folders and files
+git commit -m "This is my first commit in main branch"
 
-Step8: Track the untracked files and move it to staging phase
-        git add filename or git add .
+git status
 
-Step9 (optional if you want to unstaged a file):
-        git restore --staged filename
+git branch -M main
+git branch
 
-Step10: Commit the changes
-        git commit -m "feat: index.html ui has been added"
+git remote add origin YOUR_GITHUB_LINK
 
-Step11: Push local code to remote repo into origin/main
-        git push origin main 
+git push -u origin main
+
+echo "HELLO" >> README.md
+
+git add README.md
+git commit -m "This is my second commit"
+git push -u origin main
+
+git checkout -b feature/login
+git branch
+
+echo "feature login" > login.md
+
+git add login.md
+git commit -m "This is feature login"
+
+git push -u origin feature/login
+
+git checkout main
+git branch
+
+git merge --no-ff feature/login
+git push
+
+git tag -a v1.0.1 -m "This is Version 1.0.1"
+git push origin v1.0.1
+
+echo "This is another change" >> login.md
+
+git status
+git add login.md
+git commit -m "My another commit"
+git push -u origin main
+
+git checkout feature/login
+git branch
+
+git merge --no-ff main
+git push
